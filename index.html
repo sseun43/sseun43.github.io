@@ -10,20 +10,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
   .bg-1 { 
-      background-color: #1abc9c;
+      background-color: #1abc9c; /* Green */
       color: #ffffff;
   }
   .bg-2 { 
-      background-color: #474e5d;
+      background-color: #474e5d; /* Dark Blue */
       color: #ffffff;
   }
   .bg-3 { 
-      background-color: #ffffff;
+      background-color: #ffffff; /* White */
       color: #555555;
   }
   .bg-4 { 
-      background-color: #2f2f2f;
+      background-color: #2f2f2f; /* Black Gray */
       color: #fff;
   }
   .container-fluid {
@@ -44,7 +55,7 @@
   }
   </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar">
 
 <nav class="navbar navbar-default">
   <div class="container">
@@ -67,7 +78,7 @@
   </div>
 </nav>
 
-<div id ="who"class="container-fluid bg-1 text-center">
+<div id ="who" class="container-fluid bg-1 text-center">
   <h3>Who Am I?</h3>
   <img src="https://res.cloudinary.com/didfgfqbq/image/upload/c_crop,h_586,w_540/v1500949137/samuel_picture_l6xine.jpg" class="img-responsive img-circle" style="display:inline" alt="Akangbe Oluwaseun SAMUEL" width="350" height="350">
   <h3>My name is Samuel,I am a Software Developer based in Helsinki,Finland</h3>
@@ -75,18 +86,19 @@
 
 <div id="what" class="container-fluid bg-2 text-center">
   <h3>About me?</h3>
-  <h4>
-  <ul style="list-style-type:none">
+  <div class="text-center">
+  <p>
+  <ul style="list-style-type:none" class="list-group">
   <li>I am mostly a self taught developer,I spent one year teaching myself Javascript using FreeCodeCamp</li>
-  <li>After this,attend a selective coding school in Belgium called ELIUM ACADEMY</li>
+  <li>After this,I attended a selective coding school in Belgium called ELIUM ACADEMY</li>
   <li>I got to practice more of my coding skills at Elium and also got to build projects in teams rather than individually</li>
   <li>I have worked with Javascript,Python,Node JS,Jquery,React,HTML,Bootstrap,CSS,GIT and GITHUB</li>
   <li>My strength is in Logic and breaking big problems into smaller chunks</li>
   <li>I am naturally drawn to back-end work and my future plan is to learn and master machine learning and data analysis</li>
 
 </ul>
-  </h4>
-  
+  <p>
+  </div>
 </div>
 
 <div id="portfolio" class="container-fluid bg-3 text-center">    
@@ -96,54 +108,55 @@
     <div class="col-sm-4">
       <p class="text-info"><strong>RANDOM QUOTE GENERATOR</strong></p>
        <a href="https://codepen.io/sseun43/full/WORmLe/">
-      <img id="randomquote" src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505725584/randomquote_kxn3lx.png" class="img-responsive" style="width:100%" alt="Image"></a>
+      <img id="randomquote" src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505725584/randomquote_kxn3lx.png" class="img-responsive margin" style="width:100%"  alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
       <p class="text-info"><strong>JAVASCRIPT CALCULATOR</strong></p>
       <a href="https://codepen.io/sseun43/full/braQxL/">
-      <img id="calculator" src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505725584/Javascript_Calculator_gdx0ax.png" class="img-responsive" style="width:100%" alt="Image"> </a>
+      <img id="calculator" src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505725584/Javascript_Calculator_gdx0ax.png" class="img-responsive margin" style="width:100%" alt="Image"> </a>
     </div>
     <div class="col-sm-4"> 
       <p class="text-info"><strong>WEATHER APP</strong></p>
       <a href="https://codepen.io/sseun43/full/jwwWgr/">
-      <img id="weather" src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505725585/Weather_app_va4p0a.png" class="img-responsive" style="width:100%" alt="Image"></a>
+      <img id="weather" src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505725585/Weather_app_va4p0a.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-4">
       <p class="text-info"><strong>TICTACTOE GAME</strong></p>
       <a href="https://codepen.io/sseun43/full/boGxLX/">
-      <img src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505725584/TicTacToe_game_zfbq5y.png" class="img-responsive" style="width:100%" alt="Image"> </a>
+      <img src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505725584/TicTacToe_game_zfbq5y.png" class="img-responsive margin" style="width:100%" alt="Image"> </a>
     </div>
     <div class="col-sm-4"> 
       <p class="text-info"><strong>POMODORO CLOCK</strong></p>
       <a href="https://codepen.io/sseun43/full/jLpGvd/">
-      <img src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505725584/Pomodoro_clock_qjbdq5.png" class="img-responsive" style="width:100%" alt="Image"></a>
+      <img src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505725584/Pomodoro_clock_qjbdq5.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
     </div>
     <div class="col-sm-4"> 
       <p class="text-info"><strong>WIKIPEDIA VIEWER</strong></p>
       <a href="https://codepen.io/sseun43/full/RgLwMa/">
-      <img id = "wiki" src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505734372/Wikipedia_viewer_dmjbet.png" class="img-responsive" style="width:100%" alt="Image"></a>
+      <img id = "wiki" src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505734372/Wikipedia_viewer_dmjbet.png" class="img-responsive margin" style="width:100%" alt="Image"></a>
     </div>
     <div class="row">
     <div class="col-sm-4">
       <p class="text-info">I plan to fill this space with a data-visualisation project</p>
-      <img src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505734559/projects_coming_soon_uw5ssp.png" class="img-responsive" style="width:100%" alt="Image">
+      <img src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505734559/projects_coming_soon_uw5ssp.png" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
       <p class="text-info">I plan to fill this space with a react project</p>
-      <img src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505734559/projects_coming_soon_uw5ssp.png" class="img-responsive" style="width:100%" alt="Image">
+      <img src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505734559/projects_coming_soon_uw5ssp.png" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
     <div class="col-sm-4"> 
       <p class="text-info">I plan to fill this space with a full-stack project</p>
       
-      <img src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505734559/projects_coming_soon_uw5ssp.png" class="img-responsive" style="width:100%" alt="Image">
+      <img src="https://res.cloudinary.com/didfgfqbq/image/upload/v1505734559/projects_coming_soon_uw5ssp.png" class="img-responsive margin" style="width:100%" alt="Image">
     </div>
   </div>
   </div>
 </div>
 
-<footer class="container-fluid bg-2 text-center">
+<footer class="bg-2 text-center">
+<div class="container-fluid">
   <div class="row ">
   <div class="col-md-1 ">
   <a href="https://www.codewars.com/users/sseun43">
@@ -168,7 +181,7 @@
   </div>
   
  </div>
-    
+  </div>  
 </footer>
 
 </body>
