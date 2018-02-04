@@ -44,11 +44,15 @@
   }
 
 
-
+ #simon{
+  border-style: solid;
+  border-width: 1px;
+ }
 
 img{
 	height: 200px;
 	width: 200px;
+  
 }
 
 #wiki{
